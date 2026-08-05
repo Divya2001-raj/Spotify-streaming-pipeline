@@ -1,13 +1,11 @@
-from spotify.artists import search_artist
+from spotify.artists import search_artist  # Import artist search function
 
 
 def main():
 
-    artist = search_artist("Arijit Singh")
+    artist = search_artist("Arijit Singh")  # Search Spotify
 
-    print(artist["artists"]["items"][0]["name"])
-    print(artist["artists"]["items"][0]["id"])
-    print(artist["artists"]["items"][0]["external_urls"]["spotify"])
+    print(artist)  # Display the response
 
 
 if __name__ == "__main__":
