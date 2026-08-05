@@ -1,11 +1,13 @@
-from spotify.auth import get_access_token  # Import the authentication function
+from spotify.artists import search_artist
 
 
 def main():
 
-    token = get_access_token()  # Generate an access token
+    artist = search_artist("Arijit Singh")
 
-    print(token)  # Print the token
+    print(artist["artists"]["items"][0]["name"])
+    print(artist["artists"]["items"][0]["id"])
+    print(artist["artists"]["items"][0]["external_urls"]["spotify"])
 
 
 if __name__ == "__main__":
