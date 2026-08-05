@@ -1,0 +1,1 @@
+# Spotify artist search functionality will be implemented in Phase 2.2.
